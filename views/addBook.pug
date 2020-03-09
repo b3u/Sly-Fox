@@ -1,0 +1,24 @@
+extends layouts/default
+
+block variables
+    - var page_title = "Add a Book"
+
+block content
+    h1.text-center Add a book
+
+    include includes/messages
+
+    form(action="/api/books", method="post")
+        p
+            label(for="title") Title
+            input#title(type="text", name="title", placeholder="Alice in Wonderland", required)
+        p
+            label(for="author") Author
+            input#author(type="text", name="author", placeholder="Lewis Carroll", required)
+        p
+            label(for="pages") Pages
+            input#pages(type="number", name="pages", placeholder="99", required)
+        p
+            label(for="year") Year
+            input#year(type="number", name="year" step="1", placeholder="1865", max="2030", required)
+        button(type="submit") Submit

@@ -1,0 +1,21 @@
+- var site_title = "Sly Fox";
+- var site_desc = "Foxes and bears and stuff."
+
+block variables
+
+html
+    head
+        include ../includes/head
+    body
+        nav.nav.is-vertical-align
+            .nav-left
+                a(href="/").brand= site_title
+            .nav-center
+                input#search(type="search", name="search")
+            .nav-right
+                    a(href="/") Home
+                    a(href="/books") Books
+                    a(href="/addBook") Add Book
+        main.container
+            block content
+        footer.text-center &copy; 2020 by Binyamin Green

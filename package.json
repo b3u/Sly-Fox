@@ -1,0 +1,33 @@
+{
+  "name": "sly-fox",
+  "version": "1.0.0",
+  "description": "🦊️",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b3u/Sly-Fox.git"
+  },
+  "keywords": [],
+  "author": "Binyamin Aron Green",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b3u/Sly-Fox/issues"
+  },
+  "homepage": "https://github.com/b3u/Sly-Fox#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.9.3",
+    "passport": "^0.4.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

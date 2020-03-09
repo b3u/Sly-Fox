@@ -1,0 +1,21 @@
+extends layouts/default
+
+block variables
+    - var page_title = "Books"
+
+block content
+    h1.text-center Books
+
+    table.striped
+        thead
+            th Title
+            th Author
+            th Pages
+            th Year
+        tbody
+            each b in books
+                tr
+                    td: a(href="/book/"+b._id)=  b.title
+                    td= b.author
+                    td= b.pages
+                    td= b.year

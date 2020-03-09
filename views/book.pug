@@ -1,0 +1,10 @@
+extends layouts/default
+
+block variables
+    - var page_title = book.title
+block content
+    h1= book.title
+    ul
+        li <b>Author:</b> #{book.author}
+        li <b>Pages:</b> #{book.pages}
+        li <b>Year:</b> #{book.year}

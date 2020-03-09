@@ -1,0 +1,10 @@
+block head
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    if page_title
+        title #{page_title} • #{site_title} | #{site_desc}
+    else
+        title #{site_title} | #{site_desc}
+    link(rel="shortcut icon", href="/assets/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="https://unpkg.com/chota@latest")
+    link(rel="stylesheet", href="/css/style.css")
